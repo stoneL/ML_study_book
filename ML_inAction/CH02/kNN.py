@@ -27,6 +27,16 @@ def classify0(inx, data_set, labels, k):
     return sorted_class_count[0][0]
 
 
+def file2matrix(filename):
+    fr = open(filename)
+    number_of_lines = len(fr.readlines())
+    return_mat = zeros((number_of_lines, 3))
+    class_label_vector = []
+    index = 0
+    for line in fr.readlines():
+        line = line.strip()
+        list
+
 
 if __name__ == "__main__":
     group, labels = create_data_set()
