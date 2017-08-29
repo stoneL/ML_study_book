@@ -35,7 +35,8 @@ def file2matrix(filename):
     index = 0
     for line in fr.readlines():
         line = line.strip()
-        list
+        list_from_line = line.split('\t')
+
 
 
 if __name__ == "__main__":
