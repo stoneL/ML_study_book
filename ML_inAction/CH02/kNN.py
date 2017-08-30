@@ -36,6 +36,7 @@ def file2matrix(filename):
     for line in fr.readlines():
         line = line.strip()
         list_from_line = line.split('\t')
+        return_mat[index, :] = list_from_line[0:3]
 
 
 
