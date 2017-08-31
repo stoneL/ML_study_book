@@ -37,8 +37,9 @@ def file2matrix(filename):
         line = line.strip()
         list_from_line = line.split('\t')
         return_mat[index, :] = list_from_line[0:3]
-
-
+        class_label_vector.append(int(list_from_line[-1]))
+        index += 1
+    return return_mat, class_label_vector
 
 if __name__ == "__main__":
     group, labels = create_data_set()
